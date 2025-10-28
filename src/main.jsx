@@ -27,11 +27,11 @@ function Home() {
     <div style={{ textAlign: "center", marginTop: "100px" }}>
       <h1>MCIoT Projects</h1>
       <ul style={{ listStyleType: "none", padding: 0 }}>
-        <li><Link to="/task1">Task 1</Link></li>
-        <li><Link to="/task2">Task 2</Link></li>
-        <li><Link to="/task3">Task 3</Link></li>
-        <li><Link to="/task4">Task 4</Link></li>
-        <li><Link to="/task5">Task 5</Link></li>
+        <li><Link to="/task12">Task 12</Link></li>
+        <li><Link to="/task2">Task 11</Link></li>
+        <li><Link to="/task3">Task 10</Link></li>
+        <li><Link to="/task4">Task 9</Link></li>
+        <li><Link to="/task5">Task 8</Link></li>
         <li><Link to="/task6">Task 6</Link></li>
         <li><Link to="/task7">Task 7</Link></li>
         <li><Link to="/task8">Task 8</Link></li>
@@ -50,24 +50,24 @@ function App() {
 
         {/* External redirects */}
         <Route
-          path="/task1"
-          element={<RedirectToExternal url="https://wokwi.com/projects/384064328366558209" />}
+          path="/task12"
+          element={<RedirectToExternal url="https://wokwi.com/projects/383260777330575361" />}
         />
         <Route
           path="/task2"
-          element={<RedirectToExternal url="https://wokwi.com/projects/384067215153294337" />}
+          element={<RedirectToExternal url="https://wokwi.com/projects/409312856465230849" />}
         />
         <Route
           path="/task3"
-          element={<RedirectToExternal url="https://wokwi.com/projects/384067628688309249" />}
+          element={<RedirectToExternal url="https://wokwi.com/projects/415371687258065921" />}
         />
         <Route
           path="/task4"
-          element={<RedirectToExternal url="https://wokwi.com/projects/384067948273994753" />}
+          element={<RedirectToExternal url="https://wokwi.com/projects/375833305298579457" />}
         />
         <Route
           path="/task5"
-          element={<RedirectToExternal url="https://wokwi.com/projects/384068272665270273" />}
+          element={<RedirectToExternal url="https://wokwi.com/projects/446074071493908481" />}
         />
         <Route
           path="/task6"
