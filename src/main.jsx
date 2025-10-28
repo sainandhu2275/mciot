@@ -1,29 +1,98 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import App from './App.jsx'
-import './index.css'
+import React, { useEffect } from "react";
+import ReactDOM from "react-dom/client";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
-// Custom redirect component
+// ✅ Component for redirecting to external links
 function RedirectToExternal({ url }) {
-  React.useEffect(() => {
-    window.location.replace(url)  // open in same tab
-  }, [url])
+  useEffect(() => {
+    window.location.href = url; // Redirect immediately
+  }, [url]);
 
-  return <p>Redirecting...</p>
+  return (
+    <div style={{ textAlign: "center", marginTop: "100px" }}>
+      <h2>Redirecting...</h2>
+      <p>If you are not redirected, <a href={url}>click here</a>.</p>
+    </div>
+  );
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
+// ✅ Home component
+function Home() {
+  return (
+    <div style={{ textAlign: "center", marginTop: "100px" }}>
+      <h1>MCIoT Projects</h1>
+      <ul style={{ listStyleType: "none", padding: 0 }}>
+        <li><Link to="/task1">Task 1</Link></li>
+        <li><Link to="/task2">Task 2</Link></li>
+        <li><Link to="/task3">Task 3</Link></li>
+        <li><Link to="/task4">Task 4</Link></li>
+        <li><Link to="/task5">Task 5</Link></li>
+        <li><Link to="/task6">Task 6</Link></li>
+        <li><Link to="/task7">Task 7</Link></li>
+        <li><Link to="/task8">Task 8</Link></li>
+        <li><Link to="/task9">Task 9</Link></li>
+      </ul>
+    </div>
+  );
+}
+
+// ✅ Main App with routes
+function App() {
+  return (
+    <Router>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/task6" element={<RedirectToExternal url="https://wokwi.com/projects/383981664359646209" />} />
-        <Route path="/task9" element={<RedirectToExternal url="https://wokwi.com/projects/375833305298579457" />} />
-        <Route path="/task10" element={<RedirectToExternal url="https://wokwi.com/projects/415371687258065921" />} />
-        <Route path="/task11" element={<RedirectToExternal url="https://wokwi.com/projects/409312856465230849" />} />
-        <Route path="/task12" element={<RedirectToExternal url="https://wokwi.com/projects/383260777330575361" />} />
+        <Route path="/" element={<Home />} />
+
+        {/* External redirects */}
+        <Route
+          path="/task1"
+          element={<RedirectToExternal url="https://wokwi.com/projects/384064328366558209" />}
+        />
+        <Route
+          path="/task2"
+          element={<RedirectToExternal url="https://wokwi.com/projects/384067215153294337" />}
+        />
+        <Route
+          path="/task3"
+          element={<RedirectToExternal url="https://wokwi.com/projects/384067628688309249" />}
+        />
+        <Route
+          path="/task4"
+          element={<RedirectToExternal url="https://wokwi.com/projects/384067948273994753" />}
+        />
+        <Route
+          path="/task5"
+          element={<RedirectToExternal url="https://wokwi.com/projects/384068272665270273" />}
+        />
+        <Route
+          path="/task6"
+          element={<RedirectToExternal url="https://wokwi.com/projects/383981664359646209" />}
+        />
+        <Route
+          path="/task7"
+          element={<RedirectToExternal url="https://wokwi.com/projects/383981664359646209" />}
+        />
+        <Route
+          path="/task8"
+          element={<RedirectToExternal url="https://wokwi.com/projects/383981664359646209" />}
+        />
+        <Route
+          path="/task9"
+          element={<RedirectToExternal url="https://wokwi.com/projects/383981664359646209" />}
+        />
       </Routes>
-    </BrowserRouter>
+    </Router>
+  );
+}
+
+// ✅ Render to DOM
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
   </React.StrictMode>
-)
+);
