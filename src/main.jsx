@@ -35,7 +35,7 @@ function Home() {
         <li><Link to="/task6">Task 6</Link></li>
         <li><Link to="/task7">Task 7</Link></li>
         <li><Link to="/task8">Task 8</Link></li>
-        <li><Link to="/task9">Task 9</Link></li>
+        <li><Link to="/task1">Task 1</Link></li>
       </ul>
     </div>
   );
@@ -82,8 +82,8 @@ function App() {
           element={<RedirectToExternal url="https://wokwi.com/projects/383981664359646209" />}
         />
         <Route
-          path="/task9"
-          element={<RedirectToExternal url="https://wokwi.com/projects/383981664359646209" />}
+          path="/task1"
+          element={<RedirectToExternal url="https://www.tinkercad.com/things/kp0smgPOPnP/editel?lessonid=EFU6PEHIXGFUR1J&projectid=OGK4Q7VL20FZRV9&collectionid=OMOZACHJ9IR8LRE&title=Editing%20Components&sharecode=7i3elgVHFVDQxopeKFeOTiwYh-QbDqCqACa1H7oJTx8" />}
         />
       </Routes>
     </Router>
