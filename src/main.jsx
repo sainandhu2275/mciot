@@ -93,7 +93,7 @@ function App() {
         />
         <Route
           path="/task33"
-          element={<RedirectToExternal url="https://wokwi.com/projects/415371687258065921" />}
+          element={<RedirectToExternal url="https://www.tinkercad.com/things/0matNKVU1Zm/editel?sharecode=rpaJlN-_YV42BVvDmU3lwzQbR5TRxvW_czh9u4WzQ0k" />}
         />
         <Route
           path="/task22"
