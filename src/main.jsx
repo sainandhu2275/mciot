@@ -33,8 +33,6 @@ function Home() {
         <li><Link to="/task4">Task 9</Link></li>
         <li><Link to="/task5">Task 8</Link></li>
         <li><Link to="/task6">Task 6</Link></li>
-        <li><Link to="/task7">Task 7</Link></li>
-        <li><Link to="/task8">Task 8</Link></li>
         <li><Link to="/task1">Task 1</Link></li>
       </ul>
     </div>
