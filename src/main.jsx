@@ -89,7 +89,7 @@ function App() {
         />
         <Route
           path="/task44"
-          element={<RedirectToExternal url="https://www.tinkercad.com/things/0zpgneQANV1-copy-of-copy-of-copy-of-task4/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=NSScWwT6vd8WfJKV97gbDoIy8omDfLEHSwENCWxQhFE" />}
+          element={<RedirectToExternal url="https://www.tinkercad.com/things/5TxbOKgBJ0v/editel?returnTo=%2Fdashboard&sharecode=2p4ysnHO7Vhs2Vu3mDabsu9J1eHLnXd4vwxHyt0D_TI" />}
         />
         <Route
           path="/task33"
