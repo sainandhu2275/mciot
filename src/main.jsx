@@ -33,7 +33,7 @@ function Home() {
         <li><Link to="/task4">Task 9</Link></li>
         <li><Link to="/task5">Task 8</Link></li>
         <li><Link to="/task6">Task 6</Link></li>
-        <li><Link to="/task7">Task 5</Link></li>
+        <li><Link to="/task55">Task 5</Link></li>
         <li><Link to="/task44">Task 4</Link></li>
         <li><Link to="/task33">Task 3</Link></li>
         <li><Link to="/task22">Task 2</Link></li>
@@ -98,6 +98,10 @@ function App() {
         <Route
           path="/task22"
           element={<RedirectToExternal url="https://wokwi.com/projects/445984021591846913" />}
+        />
+        <Route
+          path="/task55"
+          element={<RedirectToExternal url="https://wokwi.com/projects/446485620429689857" />}
         />
       </Routes>
     </Router>
